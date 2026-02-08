@@ -6,7 +6,8 @@ function CurrentWeather({ data }) {
     <div className="current-weather">
       <h2>{data.city}</h2>
       <div className="weather-main">
-        <img src={data.icon} alt="weather icon" />
+        <p>{data.icon}</p>
+        {/* <img src={data.icon} alt="weather icon" /> */}
         <h1>{data.temperature}°C</h1>
       </div>
       <p>{data.description}</p>

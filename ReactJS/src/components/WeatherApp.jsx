@@ -16,7 +16,13 @@ function WeatherApp() {
 
       // Replace with your backend API endpoint
       const response = await fetch(`/api/weather?city=${city}`);
+      console.log("API Response:", response);
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch weather data");
+      }
       const data = await response.json();
+      console.log("Parsed Data:", data);
 
       setWeatherData(data.current);
       setForecastData(data.forecast);
