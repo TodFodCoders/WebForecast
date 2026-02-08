@@ -15,7 +15,9 @@ function WeatherApp() {
       setError("");
 
       // Replace with your backend API endpoint
-      const response = await fetch(`/api/weather?city=${city}`);
+      const response = await fetch(
+        `http://localhost:5000/api/weather?city=${city}`,
+      );
       console.log("API Response:", response);
 
       if (!response.ok) {
