@@ -1,7 +1,7 @@
 import express from "express";
 import { fetchWeatherApi } from "openmeteo";
-import { getWeatherEmoji } from "../util/weatherEmoji";
-import { getWeatherDescription } from "../util/weatherDescription";
+import { getWeatherEmoji } from "../util/weatherEmoji.ts";
+import { getWeatherDescription } from "../util/weatherDescription.ts";
 
 const router = express.Router();
 
