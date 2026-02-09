@@ -36,12 +36,22 @@ body {
 
 .current-weather {
   text-align: center;
+  color: black;
 }
 
 .weather-main {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.weather-main p {
+  font-size: 50px;
+  text-shadow: rgb(100, 100, 119) 0px 0px 10px;
+}
+.weather-main h1 {
+  font-size: 28px;
+  margin-left: 20px;
 }
 
 .weather-details {
@@ -55,6 +65,7 @@ body {
   display: flex;
   overflow-x: auto;
   margin-top: 20px;
+  color: black;
 }
 
 .forecast-card {
